@@ -1,0 +1,23 @@
+MODEL
+recolor
+-LAYOUT
+Delete
+FMINTERACT
+fmclean
+-LAYOUT
+Template
+"Y:\CAD\Templates\NU_TITLE_STANDARD LAYOUTS.dwt"
+"FMINTERACT"
+-LAYOUT
+SET
+FMINTERACT
+MSPACE
+ZOOM
+Extent
+pspace
+UpdateFields
+UpdateAreas
+qsave
+fminteract-localpdf
+model 
+qsave
