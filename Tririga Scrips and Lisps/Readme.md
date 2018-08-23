@@ -3,7 +3,10 @@ This is a repository of newer functions for use with Northwestern's Cad systems 
    1. Manage -> Load Application -> Contents (Under "Starting Suite")
    2. Navigate to the folder with the files and add them
 
-The parent folder should also be added to the "trusted files" search path in autocad's options
+
+#### Notes
+The parent folder should also be added to the "trusted files" search path in autocad's options.
+Certain functions (doorify, insertTitleBlock, tripdf) rely on using files in their current location.  If they are moved, the "parentFolder" variable should be edited with the new location of the .dwg files.  For triPDF, is a new plotstyle is desired, the "plotstyle" variable should be changed to said plotstyle, and said file should go in the "parentFolder" (Y:\plotstyles currently).
 
 #### A brief overview of the important functions:
  * triPublish: explodes dimensions in the drawing temporarily before publishing to tririga, so that they can show up in the drawing
