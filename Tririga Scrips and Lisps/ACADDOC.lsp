@@ -1,0 +1,13 @@
+(load "PublishTriPDF" "PublishTriPDF failed to load")
+(load "recolor" "recolor failed to load")
+(load "fmlayers" "stdize failed to load")
+(load "UpdateTriFields" "update custom fields failed to load")
+(load "fmclean" "fmclean failed to load")
+(load "dimtodimlayer" "dimtodimlayer failed to load")
+(load "stddims" "stddims failed to load")
+(load "pclose" "pclose failed to load")
+(load "triPDF" "triPDF failed to load")
+(load "fixText" "fixText failed to load")
+(load "splineToPline" "splineToPline failed to load")
+(load "triPublish" "triPublish failed to load")
+(load "queryDB" "queryDB failed to load"

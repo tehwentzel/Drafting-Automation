@@ -6,6 +6,7 @@ current scripts in the PDF-Publishing folder, and give details on simple
 edits and troubleshooting that can be done. This instruction set was
 written on 7/10/2017 for the scripts within the folder K:\\CADD\\Scripts
 and Lisps\\AW Scripts\\Publishing PDFs 2.0.
+UPDATE: A new set of lisps is avaliable in the \Tririga Scrips and Lisps Subfolder for 2018 
 
 Recolor
 =======
