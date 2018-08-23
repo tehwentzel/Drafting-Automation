@@ -2,10 +2,12 @@
 This is a repository of newer functions for use with Northwestern's Cad systems with the new Tririga system. The files can be installed by going to 
    1. Manage -> Load Application -> Contents (Under "Starting Suite")
    2. Navigate to the folder with the files and add them
-
+   
+*The parent folder should also be added to the "trusted files" search path in autocad's options if you don't want a warning every time  Autocad opens:*
+   1. Options -> Trusted Locations -> Add
+   2. Add the folder containing the lisp files to this search path.
 
 #### Notes
-The parent folder should also be added to the "trusted files" search path in autocad's options.
 Certain functions (doorify, insertTitleBlock, tripdf) rely on using files in their current location.
  * doorify: 
    [The doorPath](https://github.com/tehwentzel/Drafting-Automation/blob/480b5b6649eaa915924bef722b9d34c5cb20b6b6/Tririga%20Scrips%20and%20Lisps/Doorify.lsp#L39) variable should be changed to the location of the [dynamic door.dwg](https://github.com/tehwentzel/Drafting-Automation/blob/tririga-updates/Tririga%20Scrips%20and%20Lisps/Dynamic_Door.dwg) file should it move.
