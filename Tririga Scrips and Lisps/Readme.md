@@ -6,7 +6,15 @@ This is a repository of newer functions for use with Northwestern's Cad systems 
 
 #### Notes
 The parent folder should also be added to the "trusted files" search path in autocad's options.
-Certain functions (doorify, insertTitleBlock, tripdf) rely on using files in their current location.  If they are moved, the "parentFolder" variable should be edited with the new location of the .dwg files.  For triPDF, is a new plotstyle is desired, the "plotstyle" variable should be changed to said plotstyle, and said file should go in the "parentFolder" (Y:\plotstyles currently).
+Certain functions (doorify, insertTitleBlock, tripdf) rely on using files in their current location.
+ * doorify: 
+   [The doorPath](https://github.com/tehwentzel/Drafting-Automation/blob/480b5b6649eaa915924bef722b9d34c5cb20b6b6/Tririga%20Scrips%20and%20Lisps/Doorify.lsp#L39) variable should be changed to the location of the [dynamic door.dwg](https://github.com/tehwentzel/Drafting-Automation/blob/tririga-updates/Tririga%20Scrips%20and%20Lisps/Dynamic_Door.dwg) file should it move.
+   
+ * insertTitleBlock: 
+   [the parentFolder](https://github.com/tehwentzel/Drafting-Automation/blob/480b5b6649eaa915924bef722b9d34c5cb20b6b6/Tririga%20Scrips%20and%20Lisps/insertTitleblock.lsp#L9) variable should be changed to the folder containing the titleblocks, should it move
+   
+ * triPDF: 
+   the main part of the changes are in the "PublishTriPDF.lsp" file.  To change the location of the folder that contains the plotstyles, edit [this line](https://github.com/tehwentzel/Drafting-Automation/blob/480b5b6649eaa915924bef722b9d34c5cb20b6b6/Tririga%20Scrips%20and%20Lisps/PublishTriPDF.lsp#L17) and replace "Y:\\Plotstyles" with the folder.  To change the plotstyle, change [this line](https://github.com/tehwentzel/Drafting-Automation/blob/480b5b6649eaa915924bef722b9d34c5cb20b6b6/Tririga%20Scrips%20and%20Lisps/PublishTriPDF.lsp#L36) by replacing the "." with the name of the plotstyle (in quotes, eg "custom.ctb")
 
 #### A brief overview of the important functions:
  * triPublish: explodes dimensions in the drawing temporarily before publishing to tririga, so that they can show up in the drawing
